@@ -6,7 +6,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+        <Switch>
+          <Route
+            exact path='/'
+            render={
+              () => (
+                <p>Hello</p>
+              )
+            }
+          />
+        </Switch>
       </div>
     );
   }
