@@ -10,9 +10,7 @@ class App extends Component {
           <Route
             exact path='/'
             render={
-              () => (
-                <p>Hello</p>
-              )
+              () => (<Home/>)
             }
           />
         </Switch>
