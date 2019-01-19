@@ -8,8 +8,13 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="gallery-list">
-      </div>
+      <div className="gallery-list">{
+        this.state.galleries.map( gallery =>
+          <Gallery
+            key={gallery}
+          />
+        )
+      }</div>
     )
   }
 }
