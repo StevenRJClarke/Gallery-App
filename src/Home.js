@@ -12,6 +12,7 @@ class Home extends Component {
         this.state.galleries.map( gallery =>
           <Gallery
             key={gallery}
+            gallery={gallery}
           />
         )
       }</div>
