@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+/* Header */
 .header {
   background-color: #008080;
   padding: 1em;
@@ -12,4 +13,14 @@
   font-family: 'Times New Roman', Times, serif;
   font-size: 48px;
   margin: 0;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  padding: 10px;
+}
+
+.gallery-title {
+  font-family: 'Times New Roman', Times, serif;
 }
