@@ -4,7 +4,7 @@ class Gallery extends Component {
   render() {
     return (
       <div className="gallery">
-        <h2 className="gallery-title">Title</h2>
+        <h2 className="gallery-title">{this.props.gallery}</h2>
 
         <div className="gallery-paintings">
           <ol className="paintings-grid">
