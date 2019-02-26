@@ -5,6 +5,10 @@ import Home from './Home'
 import './App.css';
 
 class App extends Component {
+  state = {
+    paintings: []
+  }
+
   componentDidMount() {
     // Use the Europeana Search API to search for painting information
     fetch('https://www.europeana.eu/api/v2/search.json?query=Caravaggio&media=true&profile=rich&wskey=CqjrYqrLp')
