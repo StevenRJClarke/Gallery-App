@@ -10,6 +10,7 @@ class App extends Component {
     fetch('https://www.europeana.eu/api/v2/search.json?query=Caravaggio&media=true&profile=rich&wskey=CqjrYqrLp')
     .then( response => response.json() )
     .then( response => response.items )
+    .catch( error => console.log('Error', error) )
   }
 
   render() {
