@@ -81,8 +81,16 @@ class App extends Component {
           else {
             painting.imageURL = 'No image';
           }
+
+          // Push painting object to array
+          paintingInfo.push(painting);
         }
       )
+
+      // Set paintings state
+      this.setState({
+        paintings: paintingInfo
+      });
     })
     .catch( error => console.log('Error', error) )
   }
