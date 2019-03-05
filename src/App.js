@@ -25,7 +25,10 @@ class App extends Component {
         // add it to an object and push this object to our paintingInfo array
         item => {
           // Create painting object which will be added to paintings array
-          let painting = {};
+          let painting = {
+            // Give each painting object a gallery property, initialized to 'Not Seen'
+            gallery: 'Not Seen'
+          };
 
           // Check the item has a title. If so, add it as a property to the object
           // and push onto the array
