@@ -13,6 +13,7 @@ class Home extends Component {
           <Gallery
             key={gallery}
             gallery={gallery}
+            paintings={this.props.paintings}
           />
         )
       }</div>
