@@ -106,7 +106,11 @@ class App extends Component {
           <Route
             exact path='/'
             render={
-              () => (<Home/>)
+              () => (
+                <Home
+                  paintings={this.state.paintings}
+                />
+              )
             }
           />
         </Switch>
