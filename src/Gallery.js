@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Painting from './Painting'
 
 class Gallery extends Component {
   render() {
