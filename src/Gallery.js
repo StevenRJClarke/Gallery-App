@@ -11,7 +11,7 @@ class Gallery extends Component {
           <ol className="paintings-grid">
             {
               this.props.paintings
-              .filter( painting => painting.gallery === this.props.gallery )
+              .filter( painting => painting.gallery === this.props.gallery && painting.imageURL !== 'No image' )
               .map( painting => (
                 <Painting
                   key={painting.title}
