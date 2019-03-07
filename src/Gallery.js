@@ -9,6 +9,16 @@ class Gallery extends Component {
 
         <div className="gallery-paintings">
           <ol className="paintings-grid">
+            {
+              this.props.paintings
+              .filter( painting => painting.gallery === this.props.gallery )
+              .map( painting => (
+                <Painting
+                  key={painting.title}
+                  painting={painting}
+                />
+              ) )
+            }
           </ol>
         </div>
       </div>
