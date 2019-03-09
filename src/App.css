@@ -17,10 +17,23 @@
 
 /* Gallery */
 .gallery {
-  display: flex;
   padding: 10px;
+  text-align: left;
 }
 
 .gallery-title {
   font-family: 'Times New Roman', Times, serif;
+}
+
+.paintings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+/* Painting Image */
+.painting-image {
+  height: 200px;
+  margin: 5px;
 }
