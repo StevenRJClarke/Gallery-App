@@ -13,6 +13,12 @@ class Painting extends Component {
                 ? this.props.painting.imageURL
                 : "http://via.placeholder.com/128x193?text=?"
               }
+              alt={
+                (this.props.painting.imageURL)
+                ? this.props.painting.imageURL
+                : "http://via.placeholder.com/128x193?text=?"
+              }
+
             />
           </div>
           <div className="painting-title">{this.props.painting.title}</div>
