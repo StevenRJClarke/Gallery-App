@@ -20,6 +20,7 @@ class Painting extends Component {
                 : "http://via.placeholder.com/128x193?text=?"
               }
             />
+            <GalleryChanger/>
           </div>
           <div className="painting-title">{this.props.painting.title}</div>
           <div className="painting-artist">Michelangelo Merisi da Caravaggio</div>
