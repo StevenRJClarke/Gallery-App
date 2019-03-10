@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import GalleryChanger from './GalleryChanger'
 
 class Painting extends Component {
   render() {
@@ -18,7 +19,6 @@ class Painting extends Component {
                 ? this.props.painting.imageURL
                 : "http://via.placeholder.com/128x193?text=?"
               }
-
             />
           </div>
           <div className="painting-title">{this.props.painting.title}</div>
