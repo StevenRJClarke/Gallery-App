@@ -32,8 +32,21 @@
   list-style-type: none;
 }
 
-/* Painting Image */
+/* Painting */
+.painting {
+  margin: 5px 5px 15px 5px;
+}
+
 .painting-image {
   height: 200px;
   margin: 5px;
+}
+
+.painting-title {
+  font-size: 0.9em;
+}
+
+.painting-artist {
+  color: #999;
+  font-size: 0.8em;
 }

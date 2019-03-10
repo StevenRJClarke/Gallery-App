@@ -5,14 +5,18 @@ class Painting extends Component {
     return (
       <li>
         <div className="painting">
-          <img
-            className="painting-image"
-            src={
-              (this.props.painting.imageURL)
-              ? this.props.painting.imageURL
-              : "http://via.placeholder.com/128x193?text=?"
-            }
-          />
+          <div className="painting-top">
+            <img
+              className="painting-image"
+              src={
+                (this.props.painting.imageURL)
+                ? this.props.painting.imageURL
+                : "http://via.placeholder.com/128x193?text=?"
+              }
+            />
+          </div>
+          <div className="painting-title">{this.props.painting.title}</div>
+          <div className="painting-artist">Michelangelo Merisi da Caravaggio</div>
         </div>
       </li>
     )
